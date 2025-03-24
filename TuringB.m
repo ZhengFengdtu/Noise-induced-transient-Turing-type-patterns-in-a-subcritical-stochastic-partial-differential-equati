@@ -48,6 +48,7 @@ title('Eigenvalue Analysis of Turing Bifurcation');
 legend('Eigenvalue 1', 'Eigenvalue 2', '\lambda = 0', 'Location', 'southwest');
 grid on;
 %%
+% compute the critical d
 a11 = J(1,1);
 a12 = J(1,2);
 a21 = J(2,1);
