@@ -57,8 +57,8 @@ for n = 1: Nt-1
     % Initialize u_new and v_new with previous time step values
     u_old = u_half; 
     v_old = v_half; 
-    dW_u = sqrt(dx*dy*dt) * randn(Ny, Nx);  % 对 u 的噪声
-    dW_v = sqrt(dx*dy*dt) * randn(Ny, Nx);  % 对 v 的噪声 
+    dW_u = sqrt(dx*dy*dt) * randn(Ny, Nx);  % noise for u
+    dW_v = sqrt(dx*dy*dt) * randn(Ny, Nx);  % noise for v 
     for i = 2:Nx-1
         for j = 2:Ny-1
         % Perform the explicit half-step based on the old time for u
